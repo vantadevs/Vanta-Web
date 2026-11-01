@@ -24,7 +24,41 @@ const GAMES = [
 ];
 
 // Intentionally empty until real release information is supplied. Do not invent dates/changelogs.
-const RECENTLY_ADDED = [];
+const RECENTLY_ADDED = [🚀 MAJOR UPDATE – 20+ GAMES & 60+ PREMIUM FEATURES!
+
+NEW UPDATE RELEASED
+
+We’ve just dropped a massive update with tons of new content and improvements!
+
+🎮 What’s New?
+
+* Added 20+ newly supported games.
+* Added 60+ premium features.
+* Expanded compatibility with popular Roblox games.
+* Introduced new scripts, tools, and utilities.
+* Improved existing game support.
+
+💎 Premium Features
+
+* 60+ new premium features available.
+* More tools and customization options.
+* Enhanced functionality.
+* New features across supported games.
+
+🔧 Improvements & Fixes
+
+* Improved overall stability.
+* Optimized performance.
+* Updated existing scripts.
+* Fixed various bugs and compatibility issues.
+
+🔥 What’s Next?
+
+We’re constantly expanding our game support and adding new features to make your experience even better.
+
+More games. More features. More possibilities.
+
+Thank you for your continued support! ❤️];
 const RECENTLY_UPDATED = [];
 // Add real per-game feature data here when supplied. Keep arrays empty until confirmed.
 // Example: "game-id": { freeFeatures:["Confirmed feature"], premiumFeatures:["Confirmed feature"], freeLink:"https://..." }
