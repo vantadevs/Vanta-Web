@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050508">
+  <meta name="description" content="Vanta Hub — discover free and premium scripts for your favourite Roblox games.">
+  <title>Vanta Hub — Premium Roblox Scripts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Vanta Hub home">
+      <img src="assets/vanta-logo.jpg" alt="Vanta logo"><span class="brand-word">VANTA <b>HUB</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home" data-route="home">Home</a><a href="#scripts" data-route="scripts">Scripts</a>
+      <a href="#premium" data-route="premium">Premium</a><a href="#updates" data-route="updates">Updates</a>
+      <a href="#contact" data-route="contact">Contact</a>
+    </nav>
+    <a class="button button-small button-outline header-discord" href="https://discord.gg/RSjKdvBC58" target="_blank" rel="noopener">Join Discord <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="page active" id="page-home" data-page="home">
+      <div class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> PREMIUM ROBLOX SCRIPTS</div>
+          <div class="hero-logo"><img src="assets/vanta-logo.jpg" alt="Vanta emblem and wordmark"></div>
+          <h1>THE BEST SCRIPTS.<br><span>ALL IN ONE PLACE.</span></h1>
+          <p>Discover free and premium scripts for your favourite Roblox games. Fast access, regular updates, and a growing collection of supported games.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#scripts">Browse Scripts <span>→</span></a><a class="button button-glass" href="https://discord.gg/RSjKdvBC58" target="_blank" rel="noopener">◈ &nbsp; Join Discord</a></div>
+          <div class="hero-note"><span>✦</span> A growing hub, built around the community.</div>
+        </div>
+        <div class="hero-art" aria-label="Abstract purple Vanta energy artwork">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="hero-glyph">V</div>
+          <div class="energy energy-a"></div><div class="energy energy-b"></div>
+          <div class="art-caption"><small>VANTA HUB</small><b>LEVEL UP YOUR EXPERIENCE</b></div>
+        </div>
+      </div>
+
+      <div class="feature-strip shell">
+        <article class="feature"><span class="feature-icon">◈</span><div><b>Secure &amp; Reliable</b><small>Designed with user safety and reliability in mind.</small></div></article>
+        <article class="feature"><span class="feature-icon">⟳</span><div><b>Regular Updates</b><small>New games, improvements, and script updates.</small></div></article>
+        <article class="feature"><span class="feature-icon">◎</span><div><b>Community Support</b><small>Get help through our Discord server.</small></div></article>
+        <article class="feature"><span class="feature-icon">✧</span><div><b>Premium Access</b><small>Unlock additional features across supported scripts.</small></div></article>
+      </div>
+
+      <section class="section shell">
+        <div class="section-heading"><div><div class="eyebrow">EXPLORE THE HUB</div><h2>Featured <span>Scripts</span></h2></div><a class="text-link" href="#scripts">View all scripts <b>→</b></a></div>
+        <div class="game-grid featured-grid" id="featuredGrid"></div>
+      </section>
+      <section class="why-section">
+        <div class="shell"><div class="section-heading"><div><div class="eyebrow">WHY VANTA HUB?</div><h2>Built for the <span>community.</span></h2></div><p class="section-intro">Everything in one place, with a clear path to the scripts and support you need.</p></div>
+          <div class="benefit-grid">
+            <article class="benefit"><span>♧</span><b>Trusted Community</b><p>A dedicated scripting community.</p></article>
+            <article class="benefit"><span>↯</span><b>Fast Access</b><p>Find available scripts quickly.</p></article>
+            <article class="benefit"><span>✧</span><b>Premium Features</b><p>Unlock additional functionality with premium access.</p></article>
+            <article class="benefit"><span>⌕</span><b>Active Support</b><p>Get assistance through our Discord ticket system.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="discord-banner shell"><div class="banner-mark">V</div><div><div class="eyebrow">JOIN THE COMMUNITY</div><h2>Stay in the <span>Vanta loop.</span></h2><p>Get support, hear about updates, and connect with the community.</p></div><a class="button button-primary" href="https://discord.gg/RSjKdvBC58" target="_blank" rel="noopener">Join our Discord ↗</a></section>
+    </section>
+
+    <section class="page" id="page-scripts" data-page="scripts">
+      <section class="page-hero shell"><div class="eyebrow">THE SCRIPT LIBRARY</div><h1>Find your next <span>advantage.</span></h1><p>Browse the supported games and universal tools in the Vanta Hub collection.</p></section>
+      <section class="shell directory">
+        <div class="directory-toolbar"><label class="search-box"><span>⌕</span><input id="scriptSearch" type="search" placeholder="Search games and scripts..." aria-label="Search games and scripts"><kbd>/</kbd></label>
+          <div class="filter-row" id="filterRow" role="group" aria-label="Filter scripts">
+            <button class="filter active" data-filter="all">All scripts <span id="count-all"></span></button>
+            <button class="filter" data-filter="free">Free</button><button class="filter" data-filter="premium">Premium</button>
+            <button class="filter" data-filter="updated">Recently updated</button><button class="filter" data-filter="added">Recently added</button>
+          </div>
+        </div>
+        <div class="results-line"><span id="resultsCount">17 entries</span><span>Click a card to view details</span></div>
+        <div class="game-grid directory-grid" id="scriptGrid"></div>
+        <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>No scripts found</h3><p>Try another search term or clear your filters.</p><button class="button button-outline" id="clearFilters">Clear filters</button></div>
+      </section>
+    </section>
+
+    <section class="page" id="page-premium" data-page="premium">
+      <section class="premium-hero shell"><div class="eyebrow"><span class="pulse"></span> VANTA PREMIUM</div><div class="premium-emblem">V</div><h1>UNLOCK THE FULL<br><span>VANTA EXPERIENCE.</span></h1><p>Take your scripting experience further with Vanta Premium. Unlock additional features across our scripts, gain early access to updates, and receive priority support from our team.</p></section>
+      <section class="shell premium-benefits"><div class="premium-benefit">✧ <span><b>60+ premium features</b><small>Across supported scripts</small></span></div><div class="premium-benefit">↯ <span><b>Early access</b><small>Updates and new features</small></span></div><div class="premium-benefit">◎ <span><b>Top-priority support</b><small>Help when you need it</small></span></div><div class="premium-benefit">＋ <span><b>Growing benefits</b><small>More exclusive content over time</small></span></div></section>
+      <section class="section shell pricing-section"><div class="center-heading"><div class="eyebrow">SIMPLE, FLEXIBLE ACCESS</div><h2>Choose your <span>key.</span></h2><p>Ready to upgrade? Open a ticket in our Discord server to arrange your premium purchase.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card"><div class="price-top"><span class="price-label">MONTHLY KEY</span><span class="price-icon">◷</span></div><div class="price"><strong>$4.99</strong><span>/ month</span></div><p>Get premium access with a flexible monthly subscription.</p><ul><li>Access to eligible premium script features</li><li>Early update access</li><li>Priority support</li><li>Premium functionality across supported scripts</li></ul><a class="button button-outline full-button" href="https://discord.com/channels/694270550524035112/1565495156151549982" target="_blank" rel="noopener">Purchase Monthly ↗</a></article>
+          <article class="price-card price-featured"><div class="best-value">BEST VALUE</div><div class="price-top"><span class="price-label">LIFETIME KEY</span><span class="price-icon">✧</span></div><div class="price"><strong>$9.99</strong><span>/ one-time</span></div><p>Pay once and unlock lifetime premium access.</p><ul><li>Lifetime premium access</li><li>Access to eligible premium script features</li><li>Early update access</li><li>Priority support</li><li>Premium functionality across supported scripts</li></ul><a class="button button-primary full-button" href="https://discord.com/channels/694270550524035112/1565495156151549982" target="_blank" rel="noopener">Purchase Lifetime ↗</a></article>
+        </div><p class="fine-print">Purchases are arranged manually through Discord. No payment is taken on this website, and no key is issued automatically.</p>
+      </section>
+    </section>
+
+    <section class="page" id="page-updates" data-page="updates">
+      <section class="page-hero shell"><div class="eyebrow">WHAT'S HAPPENING</div><h1>Fresh from <span>Vanta.</span></h1><p>New additions, improvements, and announcements from the hub.</p></section>
+      <section class="shell section updates-section"><div class="section-heading"><div><div class="eyebrow">EXPAND YOUR LIBRARY</div><h2>Recently <span>Added</span></h2></div><span class="status-label">NEW CONTENT</span></div><div class="update-grid" id="addedUpdates"></div></section>
+      <section class="shell section updates-section"><div class="section-heading"><div><div class="eyebrow">POLISHED &amp; IMPROVED</div><h2>Recently <span>Updated</span></h2></div><span class="status-label">LATEST CHANGES</span></div><div class="update-grid" id="updatedUpdates"></div></section>
+      <section class="shell section history-section"><div class="eyebrow">THE CHANGELOG</div><h2>Update <span>history.</span></h2><div id="updateHistory" class="history-list"></div></section>
+    </section>
+
+    <section class="page" id="page-contact" data-page="contact">
+      <section class="page-hero shell"><div class="eyebrow">WE'RE HERE TO HELP</div><h1>Let's talk, <span>Vanta.</span></h1><p>Questions, feedback, or need a hand? Choose the best way to reach the team.</p></section>
+      <section class="shell contact-grid">
+        <article class="contact-card contact-discord"><div class="contact-icon">◈</div><div class="eyebrow">DISCORD SUPPORT</div><h2>NEED HELP?<br><span>OPEN A TICKET.</span></h2><p>Need assistance with a script, premium access, or another issue? Join the Vanta Hub Discord server and open a support ticket. Our team will help you as soon as possible.</p><a class="button button-primary full-button" href="https://discord.com/channels/694270550524035112/1565495156151549982" target="_blank" rel="noopener">Open Discord Ticket ↗</a><a class="secondary-link" href="https://discord.gg/RSjKdvBC58" target="_blank" rel="noopener">Join the Discord server →</a></article>
+        <article class="contact-card"><div class="contact-icon">✉</div><div class="eyebrow">EMAIL SUPPORT</div><h2>CONTACT US<br><span>BY EMAIL.</span></h2><p>Prefer email? Send us your questions, feedback, or enquiries and we will get back to you when possible.</p><div class="email-address">zyvenstaff@gmail.com</div><a class="button button-outline full-button" href="mailto:zyvenstaff@gmail.com">Send Email ↗</a><small class="contact-note">Your default email application will open with our address filled in.</small></article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-main"><a class="brand footer-brand" href="#home"><img src="assets/vanta-logo.jpg" alt=""><span class="brand-word">VANTA <b>HUB</b></span></a><p>Premium Roblox scripts.<br>One hub. More possibilities.</p><div class="footer-links"><a href="#home">Home</a><a href="#scripts">Scripts</a><a href="#premium">Premium</a><a href="#updates">Updates</a><a href="#contact">Contact</a></div><a class="button button-glass" href="https://discord.gg/RSjKdvBC58" target="_blank" rel="noopener">Join Discord ↗</a></div><div class="shell footer-bottom"><span>© <span id="year"></span> Vanta Hub. All rights reserved.</span><span>Created for the community <b>✦</b></span></div></footer>
+
+  <div class="modal-backdrop" id="gameModal" hidden>
+    <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close details">×</button>
+      <div class="modal-art" id="modalArt"><span>V</span></div>
+      <div class="modal-content"><div class="eyebrow" id="modalType">GAME SCRIPT</div><h2 id="modalTitle">Game title</h2><p id="modalDescription"></p>
+        <div class="modal-columns"><section><h3>FREE FEATURES</h3><div id="freeFeatures" class="feature-placeholder"></div><a id="freeLink" class="button button-outline full-button" href="#" hidden target="_blank" rel="noopener">Access Free Script ↗</a></section>
+          <section><h3>PREMIUM FEATURES</h3><div id="premiumFeatures" class="feature-placeholder"></div><a class="button button-primary full-button" href="#premium">View Premium Options ↗</a></section></div>
+        <p class="modal-disclaimer">Feature lists and script links are awaiting official details from the Vanta team. No functionality is implied by these placeholders.</p>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
